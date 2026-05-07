@@ -12,29 +12,72 @@
 }
 
 html, body {
-font-family: "Ubuntu", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 32px; /* Основний текст */
-    line-height: 1.4; /* Нормальний міжрядковий */
+    font-size: 32px;                    /* Основний текст */
+    line-height: 1.4;                   /* Нормальний міжрядковий */
     font-style: normal;
     color: var(--txt-color-01);
 }
 
-em, i, .italic {
-    font-style: italic;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Jersey 10", sans-serif;
+h1 {
+    font-family: "Jersey 10";
     font-weight: 400;
+    font-size: 100px;
     font-style: normal;
     color: var(--header-color);
 }
 
+h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.4;
+    text-align: left;
+    margin: 0;
+    font-style: normal;
+    color: var(--accent);
+}
+
+h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.5;
+    font-style: normal;
+    color: var(--txt-color-01);
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-family: "Jersey 10";
+    font-weight: 400;
+    font-size: 100px;
+    font-style: normal;
+    color: var(--bg-block);
+    margin-bottom: -20px;
+    margin-top: -20px;
+}
+
+
 .heading-dark {
     font-size: 100px;
     color: var(--header-color)
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+.content-wrapper {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 30px;
+    overflow: visible;
 }
 
 .heading-accent {
@@ -42,11 +85,21 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--accent);
 }
 
-h1 {
-  font-size: 100px;
+.full-width-line-1 {
+    border-bottom: 5px solid var(--border-color);
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
-h2 {font-size: 1.5rem;}
-h3 {font-size: 1.35rem;}
+
+.full-width-line-2 {
+    border-bottom: 5px solid var(--border-color);
+    margin-top: 50px;
+}
+
+.full-width-line-3 {
+    border-bottom: 5px solid var(--border-color);
+}
+
 
 header > .inside,
 footer > .inside,
@@ -56,18 +109,4 @@ section > .inside {
         margin-right: auto;
         padding-left: var(--ipad-padding);
         padding-right: var(--ipad-padding);
-}
-
-.img-box img {
-display: block; /*Усі імг всередині імг бокс зробити блочними, бо воні рядкові по дефолту*/
-width: 100%;
-}
-@media (max-width:640px) {
-    
-    header > .inside,
-    footer > .inside,
-    section > .inside {
-        padding-left: var(--mob-padding);
-        padding-right: var(--mob-padding);
-    }
 }
