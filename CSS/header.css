@@ -76,13 +76,13 @@ header .col.c1 {
     align-items: center;
 }
 
-.nav-icons img {
+.nav-icons IMG {
     height: 24px;
     cursor: pointer;
     transition: opacity 0.2s;
 }
 
-.nav-icons img:hover {
+.nav-icons IMG:hover {
     opacity: 0.7;
 }
 
@@ -91,7 +91,7 @@ header .col.c1 {
     margin-bottom: 80px;
 }
 
-.img-box img {
+.img-box IMG {
     width: 100%;
     height: auto;
     display: block;
@@ -200,20 +200,20 @@ body {
     box-sizing: border-box;
 }
 
-.meme-img.left {
+.meme-IMG.left {
     width: 413px;
     height: 235px;
     object-fit: cover;
 }
 
-.meme-img.center {
+.meme-IMG.center {
     margin-top: 50px;
     width: 236px;
     height: 251px;
     object-fit: cover;
 }
 
-.meme-img.right {
+.meme-IMG.right {
     width: 413px;
     height: 253px;
     object-fit: cover;
